@@ -1,6 +1,7 @@
 ---
 layout: blog_entry
 title: Hello World!
+comments: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare aliquet tempor. 
 Suspendisse potenti. Nullam mi tellus, sollicitudin at porta eu, rutrum vel massa. 
