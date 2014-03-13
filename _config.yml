@@ -2,6 +2,3 @@ timezone: Europe/Rome
 port: 8080
 paginate: 5
 paginate_path: "page:num"
-markdown: kramdown
-kramdown:
-  use_coderay: true
