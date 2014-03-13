@@ -15,14 +15,14 @@ at ante a, lacinia dignissim libero. Nullam sodales neque a odio volutpat sagitt
 Sed egestas diam in turpis pretium vehicula. Nunc consectetur fermentum metus, id suscipit 
 arcu viverra sed.
 
-~~~ 
+```javascript
 var http = require('http');
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello Node.js\n');
 }).listen(8124, "127.0.0.1");
 console.log('Server running at http://127.0.0.1:8124/');
-~~~
+```
 
 Nunc a lectus ac diam consectetur vulputate. Nunc quis lacus porta, fringilla nulla sit amet, 
 convallis leo. Nunc egestas pulvinar congue. Vestibulum sed turpis commodo, scelerisque 
@@ -32,10 +32,10 @@ Sed justo nunc, rutrum ac lacus in, posuere lacinia dui. Pellentesque ut lectus 
 semper nunc in, consequat metus. Quisque eu rutrum magna, id commodo ligula. 
 Donec congue purus non urna accumsan accumsan. Nam congue leo eu ipsum dapibus tristique.
 
-~~~
+```bash
 cd ~/Sites
 node hello-node.js
-~~~
+```
 
 Ut ut pharetra justo, eget fermentum felis. Pellentesque adipiscing massa eu lorem feugiat 
 fringilla. Vivamus id purus fermentum, bibendum justo a, porta sem. Vestibulum ultricies orci 
