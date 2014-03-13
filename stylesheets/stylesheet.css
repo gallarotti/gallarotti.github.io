@@ -138,16 +138,17 @@ box-shadow: 7px 10px 20px 0px rgba(0,0,0,0.3);
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
-  padding: 15px;
+  padding: 10px;
   margin: 0 -15px 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.85em;
-  line-height: 1.6em;
+  font-size: 0.9em;
+  line-height: 1.7em;
 }
 .sidebar-module-inset {
-  padding: 15px;
+  padding: 20px;
   background-color: #F0E68C;
-  border-radius: 4px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -197,7 +198,8 @@ box-shadow: 7px 10px 20px 0px rgba(0,0,0,0.3);
   text-align: center;
   background-color: #F0E68C;
   border-top: 1px solid #555;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Monaco","Courier",monospace;
+  font-size: 12px;
 }
 
 #archive ol,ul {
