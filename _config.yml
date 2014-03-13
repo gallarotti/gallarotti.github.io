@@ -1,2 +1,4 @@
 timezone: Europe/Rome
 port: 8080
+paginate: 2
+paginate_path: "page:num"

@@ -3,25 +3,36 @@
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>About</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Software Engineer at a Long Island based Software Development company, Francesco has been primarily focused on ASP.NET development building custom enterprise e-commerce solutions. More recently, he has moved onto architecting, implementing and supporting custom Sitecore CMS solutions.</p>
+            <p>When he is not in front of his computer, you can find Francesco either behind one of his old cameras taking pictures, reading his growing photo book collection, trying to learn Japanese, cooking a spicy curry or walking his dog around town. He loves taking long road trips with his wife and his dream is to, one day, retire in Japan, living in a traditional Japanese house with a view of the Fuji mountain.</p>
           </div>
-          <!--<div class="sidebar-module">
-            <h3>Archives</h3>
-			{% for month in page.months %}
-			<h4>{{ month | date:"%B" }} <small>{{ month | date:"%Y" }}</small></h4>
-		  	<ul>
-		  	{% for post in page.posts_by_month[month] %}
-		  		<li><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date:"%d/%m/%y" }}</small></li>
-		  	{% endfor %}
-		  	</ul>
-			{% endfor %}
-          </div>-->
+          <div id="archive" class="sidebar-module">
+            <h4>Archives</h4>
+            <h5>This year</h5>
+            {%for post in site.posts %}
+              {% unless post.next %}
+                <ul class="this">
+              {% else %}
+                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                {% if year != nyear %}
+                  </ul>
+                  <h5 class="pastYear">{{ post.date | date: '%Y' }}</h5>
+                  <ul class="past">
+                {% endif %}
+              {% endunless %}
+                <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+          </div>
           <div class="sidebar-module">
             <h4>Elsewhere</h4>
             <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="https://github.com/gallarotti">GitHub</a></li>
+              <li><a href="https://twitter.com/gallarotti">Twitter</a></li>
+              <li><a href="https://www.facebook.com/gallarotti">Facebook</a></li>
+              <li><a href="http://gallarotti.net">Photography Portfolio</a></li>
+              <li><a href="1000linesofcode.wordpress.com">A Thousand Lines of Code</a></li>
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
