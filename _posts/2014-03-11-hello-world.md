@@ -15,7 +15,7 @@ at ante a, lacinia dignissim libero. Nullam sodales neque a odio volutpat sagitt
 Sed egestas diam in turpis pretium vehicula. Nunc consectetur fermentum metus, id suscipit 
 arcu viverra sed.
 
-~~~
+~~~ javascript
 var http = require('http');
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
