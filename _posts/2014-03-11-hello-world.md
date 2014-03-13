@@ -7,7 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare aliquet te
 Suspendisse potenti. Nullam mi tellus, sollicitudin at porta eu, rutrum vel massa. 
 Vestibulum lacinia tortor quis leo vestibulum tincidunt. Nunc at sapien nulla. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-Donec dictum est et euismod iaculis. Duis sed augue vel nulla dapibus viverra.
+Donec dictum est et euismod iaculis. Duis sed augue vel nulla dapibus viverra. 
 
 ```
 WITH theCard, theArchive
