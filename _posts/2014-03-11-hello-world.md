@@ -15,6 +15,15 @@ at ante a, lacinia dignissim libero. Nullam sodales neque a odio volutpat sagitt
 Sed egestas diam in turpis pretium vehicula. Nunc consectetur fermentum metus, id suscipit 
 arcu viverra sed.
 
+~~~
+var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello Node.js\n');
+}).listen(8124, "127.0.0.1");
+console.log('Server running this is a very long line of text for the code section... at http://127.0.0.1:8124/');
+~~~
+
 Nunc a lectus ac diam consectetur vulputate. Nunc quis lacus porta, fringilla nulla sit amet, 
 convallis leo. Nunc egestas pulvinar congue. Vestibulum sed turpis commodo, scelerisque 
 nisl eu, egestas tellus. Ut fermentum pulvinar quam id condimentum. Sed a erat at diam 
@@ -22,6 +31,11 @@ pharetra tempus. Nullam eleifend odio et arcu ornare, pharetra mollis ligula hen
 Sed justo nunc, rutrum ac lacus in, posuere lacinia dui. Pellentesque ut lectus vestibulum, 
 semper nunc in, consequat metus. Quisque eu rutrum magna, id commodo ligula. 
 Donec congue purus non urna accumsan accumsan. Nam congue leo eu ipsum dapibus tristique.
+
+~~~
+cd ~/Sites
+node hello-node.js
+~~~
 
 Ut ut pharetra justo, eget fermentum felis. Pellentesque adipiscing massa eu lorem feugiat 
 fringilla. Vivamus id purus fermentum, bibendum justo a, porta sem. Vestibulum ultricies orci 
