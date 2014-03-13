@@ -8,6 +8,14 @@ Vestibulum lacinia tortor quis leo vestibulum tincidunt. Nunc at sapien nulla.
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 Donec dictum est et euismod iaculis. Duis sed augue vel nulla dapibus viverra.
 
+```
+WITH theCard, theArchive
+MATCH (previous)-[ptc:NEXT_CARD]->(theCard)-[tcn:NEXT_CARD]->(next)-[ntc:PREV_CARD]->(theCard)-[tcp:PREV_CARD]->(previous)
+WITH theCard, theArchive, previous, next, ptc, tcn, ntc, tcp
+CREATE (previous)-[:NEXT_CARD]->(next)-[:PREV_CARD]->(previous)
+DELETE ptc, tcn, ntc, tcp
+```
+
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 Vestibulum non neque et massa vehicula gravida. Proin non varius magna, vitae viverra lacus. 
 Cras sit amet augue dictum, condimentum urna sed, rhoncus nisl. Cras nibh mauris, egestas 
