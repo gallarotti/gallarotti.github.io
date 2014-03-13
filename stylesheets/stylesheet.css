@@ -189,11 +189,13 @@ h6, .h6 {
     padding-right: 10px;
 }
 
+/**
 #archive ul li time:after {
     content: "•";
     font-size: 8px;
     padding-left: 10px;
 }
+**/
 
 #archive .this {
     -webkit-border-radius: 5px;
