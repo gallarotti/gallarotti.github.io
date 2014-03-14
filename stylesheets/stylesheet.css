@@ -99,6 +99,9 @@ a:hover {
 .blog-header {
   padding: 20px;
   padding-bottom: 5px;
+  border-left: 10px white solid;
+  border-right: 10px white solid;
+  border-bottom: 10px white solid;
   border-radius: 0px 0px 20px 20px; 
   -moz-border-radius: 0px 0px 20px 20px; 
   -webkit-border-radius: 0px 0px 20px 20px; 
@@ -155,6 +158,7 @@ a:hover {
   background-color: #F0E68C;
   border-radius: 20px;
   margin-bottom: 20px;
+  border: 10px white solid;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -207,6 +211,9 @@ a:hover {
 
   padding: 20px;
   padding-bottom: 40px;
+  border-left: 10px white solid;
+  border-right: 10px white solid;
+  border-top: 10px white solid;
   border-radius: 20px 20px 0px 0px; 
   -moz-border-radius: 20px 20px 0px 0px; 
   -webkit-border-radius: 20px 20px 0px 0px; 
