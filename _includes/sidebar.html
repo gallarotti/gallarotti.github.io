@@ -1,38 +1,42 @@
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Software Engineer at a Long Island based software development company, I have been primarily focused on ASP.NET development, building custom enterprise e-commerce solutions and implementing and supporting custom Sitecore CMS solutions.</p>
-            <p>More recently, I begun exploring the world of Single Page Applications, built using AngularJS, and 
-            the fascinating possibilities offered by the amazing Neo4J graph database.</p> 
-            <p>When I am not in front of my computer, you can find me either behind one of my cameras taking pictures, reading my growing photo book collection, trying for the 10th time to learn Japanese, cooking a spicy curry or walking my English cocker spaniels around town. I love taking long road trips with my wife and my dream is to, one day, retire in Japan, living in a traditional Japanese house with a view of the Fuji mountain.</p>
-          </div>
-          <div id="archive" class="sidebar-module">
-            <h4>Archives</h4>
-            <h5>This year</h5>
-            {%for post in site.posts %}
-              {% unless post.next %}
-                <ul class="this">
-              {% else %}
-                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-                {% if year != nyear %}
-                  </ul>
-                  <h5 class="pastYear">{{ post.date | date: '%Y' }}</h5>
-                  <ul class="past">
-                {% endif %}
-              {% endunless %}
-                <li><time>[{{ post.date | date:"%d %b" }}]</time><a href="{{ post.url }}" style="display: block;">{{ post.title }}</a></li>
-            {% endfor %}
-            </ul>
-          </div>
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="https://github.com/gallarotti" target="_blank">on GitHub</a></li>
-              <li><a href="https://twitter.com/gallarotti" target="_blank">on Twitter</a></li>
-              <li><a href="https://www.facebook.com/gallarotti" target="_blank">on Facebook</a></li>
-              <li><a href="http://gallarotti.net" target="_blank">my photography portfolio</a></li>
-              <li><a href="1000linesofcode.wordpress.com" target="_blank">a thousand lines of code (blog)</a></li>
-            </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>Software Engineer at a Long Island based software development company, I have been primarily focused on ASP.NET development, building custom enterprise e-commerce solutions and implementing and supporting custom Sitecore CMS solutions.</p>
+    <p>More recently, I begun exploring the world of Single Page Applications, built using AngularJS, and 
+    the fascinating possibilities offered by the amazing Neo4J graph database.</p> 
+    <p>When I am not in front of my computer, you can find me either behind one of my cameras taking pictures, reading my growing photo book collection, trying for the 10th time to learn Japanese, cooking a spicy curry or walking my English cocker spaniels around town. I love taking long road trips with my wife and my dream is to, one day, retire in Japan, living in a traditional Japanese house with a view of the Fuji mountain.</p>
+  </div>
+  <div id="archive" class="sidebar-module">
+    <h4>Archives</h4>
+    <h5>This year</h5>
+    {%for post in site.posts %}
+      {% unless post.next %}
+        <ul class="this">
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          </ul>
+          <h5 class="pastYear">{{ post.date | date: '%Y' }}</h5>
+          <ul class="past">
+        {% endif %}
+      {% endunless %}
+        <li><time>[{{ post.date | date:"%d %b" }}]</time><a href="{{ post.url }}" style="display: block;">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="sidebar-module">
+    <h4>Elsewhere</h4>
+    <ol class="list-unstyled">
+      <li><a href="https://github.com/gallarotti" target="_blank">on GitHub</a></li>
+      <li><a href="https://twitter.com/gallarotti" target="_blank">on Twitter</a></li>
+      <li><a href="https://www.facebook.com/gallarotti" target="_blank">on Facebook</a></li>
+      <li><a href="http://gallarotti.net" target="_blank">my photography portfolio</a></li>
+      <li><a href="1000linesofcode.wordpress.com" target="_blank">a thousand lines of code (blog)</a></li>
+    </ol>
+  </div>
+  <div class="sidebar-module">
+  <a class="twitter-timeline" href="https://twitter.com/gallarotti" data-widget-id="444593564937252864">Tweets by @gallarotti</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</div><!-- /.blog-sidebar -->
