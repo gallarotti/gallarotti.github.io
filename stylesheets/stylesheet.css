@@ -186,11 +186,12 @@ a:hover {
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 30px;
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
+  color: #666600;
+  font-family: "Monaco","Courier",monospace;
+  font-size: 12px;
 }
 
 
