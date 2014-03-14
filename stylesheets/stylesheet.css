@@ -190,7 +190,7 @@ a:hover {
 .blog-post-meta {
   margin-bottom: 20px;
   color: #666600;
-  font-family: "Monaco","Courier",monospace;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;  
   font-size: 12px;
 }
 
@@ -202,7 +202,7 @@ a:hover {
 .blog-footer {
   color: #999;
   text-align: center;
-  font-family: "Monaco","Courier",monospace;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;  
   font-size: 12px;
 
   padding: 20px;
@@ -216,7 +216,8 @@ a:hover {
   margin-top: 20px;
 }
 
-#archive ol,ul {
+#archive ol,
+#archive ul {
     list-style: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
@@ -229,7 +230,7 @@ a:hover {
 
 #archive ul li time {
     display: inline-block;
-    font-family: "Monaco","Courier",monospace;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;  
     font-size: 10px;
     padding-right: 10px;
 }
@@ -268,6 +269,6 @@ a:hover {
 }
 
 .readMore {
-    font-family: "Monaco","Courier",monospace;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;  
     font-size: 12px;
 }
