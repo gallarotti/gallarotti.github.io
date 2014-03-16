@@ -5,7 +5,9 @@ title: Cypher Query to Generate all Japanese Radicals
 ---
 There are probably a handful of people in the entire world that might be interested in this piece of information, and those people might already have found their own way to achieve the same result. Nonetheless, I am writing this quick blog post, mostly for personal reference.
 
-The following is the Cypher query that will clear an existing Neo4J database and then create 214 nodes, one for each of the Japanese radicals. 
+I am using the following Cypher query to reset (i.e. clear) an existing Neo4J database and then recreate 214 nodes, one for each of the Japanese radicals. This is one of the first steps towards a much larger project, of course.
+As I explained in other posts, I tend to use these "reset scripts" with Neo4J to be able to start from a well-know state whenever testing has brought the system to an unclean state.
+
 
 ```
 MATCH n-[r]->() 
