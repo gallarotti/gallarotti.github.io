@@ -7,7 +7,7 @@ There are probably less than 5 people in the entire world that might be interest
 
 The Cypher query published at the end of this post is used to reset (i.e. clear) an existing Neo4J database and then recreate the 214 nodes - one for each of the Japanese radicals - needed to bring the project I am working on to a well-know state. The query is run whenever testing has brought the system to an unclean state.
 
-To generate this query, first I got the data from the [Wikipedia Page on Kangxi radicals](http://en.wikipedia.org/wiki/Kangxi_radical), which I massaged the data to look like this:
+To generate this query, first I got the raw data from the [Wikipedia Page on Kangxi radicals](http://en.wikipedia.org/wiki/Kangxi_radical), which then I massaged to look like this:
 
 ```
 1|一|||1|one|42
