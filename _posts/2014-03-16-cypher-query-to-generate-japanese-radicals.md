@@ -3,11 +3,58 @@ layout: blog_entry
 comments: true
 title: Cypher Query to Generate all Japanese Radicals
 ---
-There are probably a handful of people in the entire world that might be interested in this piece of information, and those people might already have found their own way to achieve the same result. Nonetheless, I am writing this quick blog post, mostly for personal reference.
+There are probably less than 5 people in the entire world that might be interested in this piece of information, including me, and those people might already have found their own way to achieve the same result. Nonetheless, I am writing this quick blog post, mostly for personal reference.
 
-I am using the following Cypher query to reset (i.e. clear) an existing Neo4J database and then recreate 214 nodes, one for each of the Japanese radicals. This is one of the first steps towards a much larger project, of course.
-As I explained in other posts, I tend to use these "reset scripts" with Neo4J to be able to start from a well-know state whenever testing has brought the system to an unclean state.
+The Cypher query published at the end of this post is used to reset (i.e. clear) an existing Neo4J database and then recreate the 214 nodes - one for each of the Japanese radicals - needed to bring the project I am working on to a well-know state. The query is run whenever testing has brought the system to an unclean state.
 
+To generate this query, first I got the data from the [Wikipedia Page on Kangxi radicals](http://en.wikipedia.org/wiki/Kangxi_radical), which I massaged the data to look like this:
+
+```
+1|一|||1|one|42
+2|丨|||1|line|21
+3|丶|||1|dot|10
+4|丿|||1|slash|33
+5|乙|⺄|乚|1|second|42
+6|亅|||1|hook|19
+7|二|||2|two|29
+8|亠|||2|lid|38
+9|人|亻|𠆢|2|man|794
+10|儿|||2|legs|52
+...
+```
+
+Then I wrote the following PERL script, which parses through the text file above and generates the Cypher query:
+
+```perl
+#!/usr/bin/perl -w
+print "MATCH n-[r]->()\n";
+print "DELETE r\n";
+print "WITH COUNT(n) AS hack\n";
+print "MATCH n\n";
+print "DELETE n\n"; 
+print "WITH COUNT(n) AS hack\n";
+print "CREATE\n";
+my $counter = 0;
+foreach $line (<STDIN>) {
+    chomp($line);              # remove the newline from $line.
+	@record = split /\|/, $line;
+	if ($counter > 0) {
+		print ",\n";
+	}
+	print "(R$record[0]:Radical{";
+	print "index:'$record[0]',";
+	print "character:'$record[1]',";
+	print "altchar1:'$record[2]',";
+	print "altchar2:'$record[3]',";
+	print "strokes:'$record[4]',";
+	print "meaning:'$record[5]',";
+	print "frequency:'$record[6]'";
+	print "})";
+	$counter++;
+}
+```
+
+And here is the generated query:
 
 ```
 MATCH n-[r]->() 
