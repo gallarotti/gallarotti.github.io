@@ -2,6 +2,10 @@
 layout: post
 comments: true
 title: Building a Single Page Application with AngularJS and Neo4J - Introduction
+image:
+  feature: birch-trees2.jpg
+  credit: Francesco Gallarotti
+  creditlink: http://www.gallarotti.net
 ---
 A series of lucky coincidences has recently brought me to dip my toes into a JavaScript-centric programming world completely new to me, from top to bottom. Or maybe I should better say, from **front** to **back**.
 

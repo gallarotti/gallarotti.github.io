@@ -2,6 +2,10 @@
 layout: post
 title: Using Neo4J for Website Analytics
 comments: true
+image:
+  feature: tuscany.jpg
+  credit: Francesco Gallarotti
+  creditlink: http://www.gallarotti.net
 ---
 Working at the office customizing and installing different content management systems (CMS) for some of our clients, I have seen different ways of tracking users and then using the collected data to generate analytics reports and to personalize content. I am not talking about simple Google Analytics data. I am referring to ways to map users into predefined *personas* and then modify the content of the site based on what that *persona* is interested into.
 

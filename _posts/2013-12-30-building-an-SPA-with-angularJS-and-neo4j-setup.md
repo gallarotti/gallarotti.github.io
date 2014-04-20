@@ -2,6 +2,10 @@
 layout: post
 comments: true
 title: Building a Single Page Application with AngularJS and Neo4J - Setup
+image:
+  feature: clouds.jpg
+  credit: Francesco Gallarotti
+  creditlink: http://www.gallarotti.net
 ---
 ## Setting up the environment
 In this section I will list all the steps that I had to go through to get my Mac ready for coding with the stack I picked. Hopefully this will be a useful timesaver for anyone who decided to do the same. If you found this page first, you won't have to do any research. Just follow my footsteps and within minutes (not including the hefty download of Apple's Xcode) you will be up and running, ready for action :)
