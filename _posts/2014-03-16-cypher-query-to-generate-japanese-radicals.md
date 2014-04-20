@@ -2,6 +2,10 @@
 layout: post
 comments: true
 title: Cypher Query to Generate all Japanese Radicals
+image:
+  feature: fountain.jpg
+  credit: Francesco Gallarotti
+  creditlink: http://www.gallarotti.net
 ---
 There are probably less than 5 people in the entire world that might be interested in this piece of information, including me, and those people might already have found their own way to achieve the same result. Nonetheless, I am writing this quick blog post, mostly for personal reference.
 
