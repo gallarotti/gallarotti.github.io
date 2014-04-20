@@ -1,7 +1,7 @@
 title:            digital thoughts
 description:      yet another coding blog
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://gallarotti.github.io/
+url:              
 port:             8080
 disqus_shortname: gallarotti
 
