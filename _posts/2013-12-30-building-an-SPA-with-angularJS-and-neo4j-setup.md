@@ -1,5 +1,5 @@
 ---
-layout: blog_entry
+layout: post
 comments: true
 title: Building a Single Page Application with AngularJS and Neo4J - Setup
 ---

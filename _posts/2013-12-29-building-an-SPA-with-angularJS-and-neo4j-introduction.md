@@ -1,5 +1,5 @@
 ---
-layout: blog_entry
+layout: post
 comments: true
 title: Building a Single Page Application with AngularJS and Neo4J - Introduction
 ---
@@ -15,7 +15,7 @@ A series of lucky coincidences has recently brought me to dip my toes into a Jav
 
 Initially I had picked the **MEAN** stack, a full-stack JavaScript development environment very trendy amongst prototypers in the Angular community (where MEAN is an acronym standing for MongoDB, ExpressJS, AngularJS and Node.js).
 
-However, after I had already built a very simple prototype of my SPA (Single Page Application) using the MEAN stack, another lucky coincidence exposed me to **Neo4J** and it was love at first sight. My decision was that, if I had to learn something new, I would have rather enjoyed being forced into a completely new way of thinking from a data perspective as well, and so I dropped MongoDB in favor of Neo4J from my personal stack.*
+However, after I had already built a very simple prototype of my SPA (Single Page Application) using the MEAN stack, another lucky coincidence exposed me to **Neo4J** and it was love at first sight. My decision was that, if I had to learn something new, I would have rather enjoyed being forced into a completely new way of thinking from a data perspective as well, and so I dropped MongoDB in favor of Neo4J from my personal stack.
 
 ## *"Abandon all hope, ye who enter here."*
 In Dante Alighieri's "Divine Commedy", when Dante passes through the gate of Hell, the gate bears an inscription which reads *"Abandon all hope, ye who enter here."* 

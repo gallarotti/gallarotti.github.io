@@ -1,5 +1,5 @@
 ---
-layout: blog_entry
+layout: post
 comments: true
 title: Cypher Query to Generate all Japanese Radicals
 ---

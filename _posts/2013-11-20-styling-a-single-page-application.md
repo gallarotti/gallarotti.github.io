@@ -1,7 +1,11 @@
 ---
-layout: blog_entry
+layout: post
 comments: true
 title: Styling a Single Page Application
+image:
+  feature: birch-trees.jpg
+  credit: Francesco Gallarotti
+  creditlink: http://www.gallarotti.net
 ---
 When building regular web pages we don't often use **absolute positioning** in CSS. Recently, though, while building the layout for a **one page web application** I have been playing around with, I wanted to divide the page in three distinct areas.
 
@@ -10,6 +14,7 @@ When building regular web pages we don't often use **absolute positioning** in C
 - **a content DIV that would stretch between the header and the footer**, using the entire space no matter how much content was placed in it.
 
 After some research, I stumbled into a CSS feature (trick?) that allows to easily **stretch a DIV vertically** by explicitly setting both the **top** and **bottom** properties at the same time.
+
 Here is the CSS:
 
 ```css

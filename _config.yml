@@ -1,5 +1,65 @@
-timezone: Europe/Rome
-port: 8080
-paginate: 5
-paginate_path: "page:num"
-markdown: redcarpet
+title:            digital thoughts
+description:      yet another coding blog
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              http://localhost:8080
+port:             8080
+disqus_shortname: gallarotti
+
+# Owner/author information
+owner:
+  name:           Francesco Gallarotti
+  avatar:         avatar_me_bubble.jpg
+  bio:            
+  email:          info@gallarotti.net
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:        https://twitter.com/gallarotti
+  github:         https://github.com/gallarotti
+  stackoverflow:  stackoverflow.com/users/438078/francesco-gallarotti
+  linkedin:       https://www.linkedin.com/in/francescogallarotti
+
+# Analytics and webmaster tools stuff goes here
+# google_analytics:   
+# google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+# bing_verify:        
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+#  - title: About
+#    url: /about/
+  - title: Posts
+    url: /posts/
+  - title: 1000 lines of code
+    url: http://1000linesofcode.wordpress.com
+    external: true
+  - title: my little world
+    url: http://www.gallarotti.net
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Rome
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+# permalink:   /:categories/:title/
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

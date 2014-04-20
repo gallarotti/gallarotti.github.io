@@ -1,5 +1,5 @@
 ---
-layout: blog_entry
+layout: post
 title: Using Neo4J for Website Analytics
 comments: true
 ---
