@@ -1,7 +1,8 @@
 ---
 layout: post-index
-permalink: /posts/
-title: All Posts
+filter: digitalian
+permalink: /digitalian-archives/
+title: Archive
 tagline: A List of Posts
 tags: [blog]
 image:

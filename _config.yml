@@ -29,13 +29,15 @@ links:
 #  - title: About
 #    url: /about/
   - title: Archives
-    url: /posts/
+    url: /digitalian-archives/
   - title: 1000 lines of code
     url: http://1000linesofcode.wordpress.com
     external: true
   - title: my little world
     url: http://www.gallarotti.net
     external: true
+  - title: Impariamo il Giapponese
+    url: /giapponese-archives/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Rome
@@ -44,7 +46,7 @@ pygments:    true
 markdown:    redcarpet
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-# permalink:   /:categories/:title/
+permalink:   /:categories/:title/
 
 kramdown:
   input: GFM

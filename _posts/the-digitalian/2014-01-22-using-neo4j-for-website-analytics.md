@@ -1,5 +1,8 @@
 ---
 layout: post
+categories: 
+- digitalian
+- neo4j
 title: Using Neo4J for Website Analytics
 comments: true
 image:

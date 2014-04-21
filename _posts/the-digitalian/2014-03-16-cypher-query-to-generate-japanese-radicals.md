@@ -1,5 +1,8 @@
 ---
 layout: post
+categories: 
+- digitalian
+- neo4j
 comments: true
 title: Cypher Query to Generate all Japanese Radicals
 image:

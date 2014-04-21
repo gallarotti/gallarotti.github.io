@@ -1,5 +1,8 @@
 ---
 layout: post
+categories: 
+- digitalian
+- neo4j
 comments: true
 title: Building a Single Page Application with AngularJS and Neo4J - Introduction
 image:
