@@ -21,7 +21,7 @@
     {% elsif page.image.feature contains 'https://' %}
       "{{ page.image.feature }}"
     {% else %}
-      "/images/{{ page.image.feature }}"
+      "/images/featured/{{ page.image.feature }}"
     {% endif %}
   alt="{{ page.title }} feature image">
   {% if page.image.credit %}
@@ -35,7 +35,7 @@
 </div>
 
 <div id="index">
-  <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
+  <h3><a href="{{ site.url}}/digitalian-archives/">Recent Posts</a></h3>
   {% for post in site.categories[{{page.filter}}] limit:8 %}    
   <article>
     {% if post.link %}

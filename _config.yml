@@ -36,8 +36,8 @@ links:
   - title: my little world
     url: http://www.gallarotti.net
     external: true
-  - title: Impariamo il Giapponese
-    url: /giapponese-archives/
+  - title: Imparo il Giapponese
+    url: /imparo-il-giapponese/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Rome
