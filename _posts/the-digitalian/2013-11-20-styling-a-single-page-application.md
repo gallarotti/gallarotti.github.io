@@ -2,7 +2,7 @@
 layout: post
 categories: 
 - digitalian
-- tips and tricks
+- tips-and-tricks
 comments: true
 title: Styling a Single Page Application
 image:
