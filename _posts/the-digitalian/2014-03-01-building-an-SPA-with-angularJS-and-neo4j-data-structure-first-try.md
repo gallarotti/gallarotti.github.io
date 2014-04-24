@@ -63,7 +63,7 @@ Let's see what all this looks like when implemented in Neo4J. The following figu
 
 For reference, this is the cypher query that generates exactly the sample graph show above:
 
-```SQL
+```
 CREATE (mainApp:CollaborativeMinds { name: "Collaborative Minds" }),
 (proj1:Project { name: "My First Project", company: "ABC Inc." }),
 (proj2:Project { name: "My Second Project", company: "ACME" }),
@@ -111,7 +111,7 @@ This means that we have two cases:
 
 Using the power of the **OPTIONAL MATCH**, I translated this idea in the following query:
 
-```SQL
+```
 // first get a hold of the list to which we want to add the new card
 MATCH (theList:List) WHERE ID(theList)=5
 // check if the list already has at least one card
@@ -161,7 +161,7 @@ Now imagine the process of taking anyone of those cards and moving it into the a
 
 If you have understood well how the insertion query works, you should be able to grasp the following query as well:
 
-```SQL
+```
 // first let's get a hold of the card we want to archive
 MATCH (theCard:Card) WHERE ID(theCard)=44
 // next, let's get a hold of the correspondent archive list node, since we need to move the card in that list
