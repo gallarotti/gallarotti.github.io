@@ -12,10 +12,10 @@ owner:
   bio:            I'm just another software engineer from Italy. I studied/worked/lived in New York state since 2000 to 2011, when I moved back to Italy. I love my wife, my three English Cocker Spaniels, landscape and portrait photography and simmering spicy curries. I have started learning Japanese numerous times. 
   email:          info@gallarotti.net
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        https://twitter.com/gallarotti
-  github:         https://github.com/gallarotti
-  stackoverflow:  stackoverflow.com/users/438078/francesco-gallarotti
-  linkedin:       https://www.linkedin.com/in/francescogallarotti
+  twitter:        gallarotti
+  github:         gallarotti
+  stackoverflow:  438078/francesco-gallarotti
+  linkedin:       francescogallarotti
 
 # Analytics and webmaster tools stuff goes here
 # google_analytics:   
