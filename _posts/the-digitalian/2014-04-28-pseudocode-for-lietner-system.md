@@ -10,7 +10,10 @@ image:
   credit: Francesco Gallarotti
   creditlink: http://www.gallarotti.net
 ---
-This is just a note to myself on how to implement the main [Lietner System](http://leitnerportal.com/LearnMore.aspx) algorithm.
+Sebastian Leitner, a German psychologist presented in the early 70's a learning system that makes selective learning possible with less effort than the traditional method of studying a set of flashcards sequentially.
+
+This is just a note to myself on how to implement the [Lietner System](http://leitnerportal.com/LearnMore.aspx).
+
 First, this is the pseudocode for the main loop to review everything that needs to be reviewed:
 
 ```
