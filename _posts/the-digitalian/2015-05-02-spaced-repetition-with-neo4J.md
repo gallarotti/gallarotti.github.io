@@ -94,6 +94,7 @@ foreach(level in levels) {
 				else {
 					unit.currentLevel = unit.currentLevel.back;
 				}
+				unit.lastUpdated = time.now();
 			}
 		}
 	}
