@@ -106,3 +106,5 @@ The answer is **C5**, obviously, because:
 - card C5 has no incoming [about] relation connected to any unit of study connected by an [isLearning] relation to the student 
 - the card previous to C5 has an incoming [about] relation connected to an unit of study (U4) connected by an [isLearning] relationship to the student.
 
+Leave your answer in the comments below!
+
