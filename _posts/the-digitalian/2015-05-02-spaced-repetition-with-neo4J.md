@@ -116,7 +116,7 @@ Leave your answer in the comments below!
 Here is my attempt to solve the problem above. If you know of a better way to achieve the same result, please let me know!
 
 ```
-MATCH (S:Student)-[:ISLEARNING]->(U1:UnitOfStudy)-[:ABOUT]->(n1:Card)-[:NEXT]->(n2:Card)
-WHERE NOT ()-[:ABOUT]->(n2) AND S.name = "Student"
-RETURN n2
+MATCH (S:Student)-[:ISLEARNING]->(U:UnitOfStudy)-[:ABOUT]->(lastCard:Card)-[:NEXT]->(nextCard:Card)
+WHERE NOT ()-[:ABOUT]->(nextCard) AND S.name = "Student"
+RETURN nextCard
 ```
