@@ -110,3 +110,13 @@ The answer is **C5**, obviously, because:
 Leave your answer in the comments below!
 
 **For your convenience, I have created a [Neo4J Graph Gist](http://gist.neo4j.org/?7a15487ef7f4cb95f353) that you can use to play with the sample dataset described above, running cypher queries against it.**
+
+### Finding Next Card to Study
+
+Here is my attempt to solve the problem above. If you know of a better way to achieve the same result, please let me know!
+
+```
+MATCH (S:Student)-[:ISLEARNING]->(U1:UnitOfStudy)-[:ABOUT]->(n1:Card)-[:NEXT]->(n2:Card)
+WHERE NOT ()-[:ABOUT]->(n2) AND S.name = "Student"
+RETURN n2
+```
