@@ -111,7 +111,7 @@ Leave your answer in the comments below!
 
 **For your convenience, I have created a [Neo4J Graph Gist](http://gist.neo4j.org/?7a15487ef7f4cb95f353) that you can use to play with the sample dataset described above, running cypher queries against it.**
 
-### Finding Next Card to Study
+### Finding the Next Card to be Studied
 
 Here is my attempt to solve the problem above. If you know of a better way to achieve the same result, please let me know!
 
@@ -122,4 +122,4 @@ OPTIONAL MATCH (D:Deck)-[:FIRST]->(firstCard:Card)
 RETURN COALESCE(nextCard, firstCard)
 ```
 
-This query takes in account the special case where no cards have been studied yet. In that case `firstCard` will be `null` and therefore the `COALESCE` function (which returns the first non `null` argument) will return `firstCard` instead.
+This query has two `OPTIONAL MATCH` clauses. This is to take in account the special case in which no cards have been studied yet by the student. In this case, the first `OPTIONAL MATCH` will return `null` and therefore the `COALESCE` function (which returns the first non `null` argument) will return `firstCard` instead.
