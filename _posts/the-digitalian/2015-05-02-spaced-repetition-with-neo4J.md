@@ -113,13 +113,21 @@ Leave your answer in the comments below!
 
 ### Finding the Next Card to be Studied
 
-Here is my attempt to solve the problem above. If you know of a better way to achieve the same result, please let me know!
+Here is my attempt to solve the [Gist](http://gist.neo4j.org/?7a15487ef7f4cb95f353) above. If you know of a better way to achieve the same result, please let me know!
 
 ```
-OPTIONAL MATCH (S:Student)-[:ISLEARNING]->(U:UnitOfStudy)-[:ABOUT]->(lastCard:Card)-[:NEXT]->(nextCard:Card)
-WHERE NOT ()-[:ABOUT]->(nextCard) AND S.name = "Student"
-OPTIONAL MATCH (D:Deck)-[:FIRST]->(firstCard:Card)
-RETURN COALESCE(nextCard, firstCard)
+OPTIONAL
+MATCH (S:Student)-[:ISLEARNING]->(U:UnitOfStudy)-[:ABOUT]->(lastCard:Card)-[:NEXT]->(nextCard:Card)<-[:HASCARD]-(D1:Deck)
+WHERE 
+	NOT ()-[:ABOUT]->(nextCard) 
+	AND S.name = "Student2" 
+	AND D1.name = "Deck"
+OPTIONAL
+MATCH (D2:Deck)-[:FIRST]->(firstCard:Card)
+WHERE 
+	D2.name = "Deck"
+RETURN 
+	COALESCE(nextCard, firstCard)
 ```
 
 This query has two `OPTIONAL MATCH` clauses. This is to take in account the special case in which no cards have been studied yet by the student. In this case, the first `OPTIONAL MATCH` will return `null` and therefore the `COALESCE` function (which returns the first non `null` argument) will return `firstCard` instead.
