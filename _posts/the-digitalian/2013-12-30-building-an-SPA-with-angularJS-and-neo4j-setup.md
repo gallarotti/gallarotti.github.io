@@ -169,8 +169,8 @@ I have done #1 and got bored pretty quickly with that. Finally I figured out the
 First, write a .cql script which builds the "well known state" that you want to be able to go back to. It might me just a few nodes and relationships or a much more complex structure. Whatever it is, the entire script should look a bit like the following:
 
 ```
-START n = node(*) 
-MATCH n-[r]-() 
+MATCH (n) 
+OPTIONAL MATCH n-[r]-() 
 DELETE n, r 
 WITH COUNT(n) AS hack
 CREATE 
