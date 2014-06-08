@@ -122,5 +122,8 @@ And if you don't like to have incompleted features in the master branch, all you
 
 For more info, read [Martin's article](http://martinfowler.com/bliki/FeatureToggle.html).
 
+Feature toggles (aka *feature flags* or *feature flippers*) have been used for years. [Here](http://code.flickr.net/2009/12/02/flipping-out/) is an example from Flickr published back in 2009. 
+
+> Flickr is somewhat unique in that it uses a code repository with no branches; everything is checked into head, and head is pushed to production several times a day. This works well for bug fixes that we want to go out immediately, but presents a problem when we’re working on a new feature that takes several months to complete. How do we solve that problem? With flags and flippers! 
 
 
