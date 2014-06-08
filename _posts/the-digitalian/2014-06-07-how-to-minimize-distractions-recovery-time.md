@@ -115,3 +115,12 @@ And if you don't like to have incompleted features in the master branch, all you
 
 **Feature toggles** can be configuration files, or complex boolean expressions in code that determine whether a feature should be turned on or off within a particular environment (i.e. this will allow a particular developer to have a feature enable on a machine, and in the QA system, but not in production, for example). A side effect of using feature toggles is that your code will need to be modular enough to be "wrappable" by the toggles -- which inevitably brings us back to the **advantages of writing loosely coupled code**.
 
+**UPDATE**: [Feature Toggles](http://martinfowler.com/bliki/FeatureToggle.html) were discussed also by Martin Fowler back in 2010. Here is an excerpt taken from that article:
+
+>One of the most common arguments in favor of FeatureBranch is that it provides a mechanism for pending features that take longer than a single release cycle. Imagine you are releasing into production every two weeks, but need to build a feature that's going to take three months to complete. How do you use Continuous Integration to keep everyone working on the mainline without revealing a half-implemented feature on your releases? We run into this issue quite a lot and feature toggles are a handy tool to deal with it.
+> The basic idea is to have a configuration file that defines a bunch of toggles for various features you have pending. The running application then uses these toggles in order to decide whether or not to show the new feature.
+
+For more info, read [Martin's article](http://martinfowler.com/bliki/FeatureToggle.html).
+
+
+
