@@ -135,3 +135,15 @@ At Google they call them *conditional features* and they have been using them, f
 > This is our ability to make changes to the Gmail code that get deployed, but not executed. You can think of it as a lot of if-statements around the new code that get enabled when the conditional feature is on. The conditional feature flag itself is set outside of the deployed code. These flags can be set in various ways: as a percentage of overall users (if we want to rollout a feature slowly), for Googlers only (if we want to use a new feature internally), for individuals (if we want to give users early access to a features) and in many other ways. In short, conditional features allow us to update our production systems separately from releasing new features. This way, Gmail developers can make changes, but don’t have to worry about their unfinished changes being released before they are ready.
 
 In my opinion the most interesting aspect of **conditional features** is the fact that they are not just switches turned on or off by a static configuration file (or similar mean). In fact complex logic, based for example on environment, time and/or user base, can be used to decide whether a feature should be shown or not. This even allows testing a new feature on a subset of end users and start collecting important usage information before deploying the new feature to the whole the users.
+
+***
+
+I would like to end this quite long blog post first of all by thanking Mark for allowing me to summarize salient parts of his interesting talk.
+
+And I would like to leave you with a note about an interesting trend that seems to be very related to this topic: **contemplative computing**.
+
+At the end of last year, JWT, one of the largest agency network in the world, published the yearly list of [100 things to watch in 2014](http://www.jwt.com/en/worldwide/news/jwts100thingstowatchin2014/), and Contemplative Computing was one of them. Contemplative computing is about learning to use information technologies in ways that help you be more focused and mindful, and protect you from being perpetually distracted.
+
+> Contemplative computing may sound like an oxymoron, but it's really quite simple. It's about how to use information technologies and social media so they're not endlessly distracting and demanding, but instead help us be more mindful, focused and creative.
+
+If you want to learn more about contemplative computing, you can either read Alex Soojung-Kim Pang's book "The Distraction Addiction", visit the author's blog [here](http://www.contemplativecomputing.org/) or watch his [talk at Lift11](http://www.contemplativecomputing.org/2011/07/marseille-talk-the-blog-version.html) in Marseille.
